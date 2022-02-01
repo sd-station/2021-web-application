@@ -1,0 +1,76 @@
+//main: ../#developer-action-index.less
+
+body {
+    padding-bottom: 300px;
+}
+
+developer-section {
+    position: fixed;
+    bottom: 2px;
+    display: block;
+    width: 100%;
+
+
+    .label-text {
+        color: rgb(77, 119, 126);
+        text-align: start;
+
+        display: flex;
+
+        width: 370px;
+        margin-top: -5px;
+
+        &::before {
+            flex-grow: 1;
+            content: " ";
+
+            background: linear-gradient(rgb(77, 119, 126), rgb(77, 119, 126));
+            background-size: 98% 1px;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+
+
+
+
+
+
+    .link-container {
+        gap: 5px;
+        margin: 10px;
+        display: flex;
+
+        margin: 0 10px;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+ 
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 2px;
+    }
+
+
+
+    a:hover {
+        text-decoration: underline;
+ 
+
+        svg {
+    
+            transition: 0.5s;
+            transform: scale(1.5);
+        }
+
+      
+    }
+
+
+}

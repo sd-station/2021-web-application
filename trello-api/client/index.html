@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Test Project</title>
+</head>
+
+<body>
+
+    <center-box>
+        <img src="/assets/cover/welcome.png" alt="" srcset="">
+
+        <p>You will Automatically enter to application in <span id="counter" class="red">3</span> Seconds</p>
+        <div class="progress">
+            <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%">
+            </div>
+        </div>
+
+        <div class="fx center">
+            <button class="btn link action" onclick="manual = true">stay here</button>
+            <a class="btn link action create" onclick="window.location.replace(`/app/main-window.html`)">Open
+                Application</a>
+        </div>
+
+        <p style="margin-bottom: 0;text-transform: uppercase;">App is Under Construction </p>
+
+    </center-box>
+    <script>
+        var i = 30;
+        var manual = false;
+        var c = document.querySelector("#counter");
+        var bar = document.querySelector("#progress-bar");
+
+        function counting() {
+            c.textContent = i;
+            setTimeout(() => {
+                i--;
+                if (i == 0) {
+                    bar.classList.remove("progress-bar-animated")
+                }
+                if (i < 0) {
+                      if(!manual)  window.location.replace("/app/main-window.html");
+                }
+                else { counting(); }
+
+            }, 1000);
+
+        }
+
+        counting();
+    </script>
+</body>
+
+</html>

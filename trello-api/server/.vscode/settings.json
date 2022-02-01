@@ -1,0 +1,15 @@
+{
+    "workbench.colorCustomizations": {
+        "list.activeSelectionBackground": "#33a355ca",
+        "list.inactiveSelectionBackground": "#1c582eca",
+        "activityBar.background": "#2C2A49",
+        "titleBar.activeBackground": "#3E3B66",
+        "titleBar.activeForeground": "#FAFAFC"
+    },
+    "deno.enable": true,
+    "deno.lint": true,
+    "deno.unstable": true,
+    "deno.suggest.imports.hosts": {
+        "https://deno.land": false
+    }
+}

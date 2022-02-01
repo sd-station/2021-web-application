@@ -1,0 +1,49 @@
+//main: ../#basic-index.less
+
+overlay-down {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    left: 0;
+    background-color: #161616;
+    box-shadow: 0 -10px  10px fade(#161616, 20%) ;
+
+    +developer-section {
+        position: static !important;
+        margin-top: 60px;
+    }
+
+    textarea {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        caret-color: orange;
+        padding: 5px 15px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .extend-area {
+        flex-grow: 1;
+    }
+
+
+    .send-button {
+        background-color: transparent;
+
+        svg {
+            width: 36px;
+            height: 36px;
+            transform: rotate(45deg);
+
+            path {
+                fill: #707070;
+            }
+        }
+
+        &:hover svg path {
+            fill: #45b46a;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+//main: ../#basic-index.less
+
+trello-list {
+
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 2px dashed silver;
+    justify-content: flex-start;
+    padding: 10px 15px;
+    max-width: 600px;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: fade(silver, 10%);
+        cursor: pointer;
+    }
+
+    svg {
+        width: 32px;
+        height: 32px;
+        flex-basis: 32px;
+
+        path {
+            fill: silver;
+        }
+    }
+
+
+    
+}
+
+ .state-archived {
+    border: 2px dashed #707070;
+    color: #a0a0a0;
+
+    background-image:repeating-linear-gradient(
+        -55deg,
+        #222,
+        #222 10px,
+        #333 10px,
+        #333 20px
+      );
+
+    svg path {
+        fill: #000000;
+    }
+}

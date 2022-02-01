@@ -1,0 +1,114 @@
+//main: ../#basic-index.less
+@green: #efefef;
+@gray: #707070;
+
+reaction-item {
+    user-select: none;
+    border: 1px solid #212121;
+    border-radius: 10px;
+    padding: 2px 5px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    &:hover {
+        border: 1px solid #324b7a;
+        cursor: pointer;
+    }
+
+    &.me {
+        border: 1px solid lighten(#324b7a, 10%);
+        background-color: fade(#324b7a, 20%);
+    }
+
+    &.deleted {
+        border: 1px solid lighten(#464646, 10%);
+        background-color: #464646;
+        color: #464646;
+    }
+
+
+
+    font-family: 'Roboto',
+    sans-serif;
+
+
+    .container {
+        position: absolute;
+        visibility: hidden;
+        margin-left: -65px;
+        margin-top: -20px;
+        width: 130px;
+        height: 40px;
+        text-align: center;
+    }
+
+    &:hover {
+        visibility: visible;
+    }
+
+
+    span.number {
+        outline: none;
+
+        text-align: center;
+
+        border-radius: 40px;
+
+        border: 2px solid transparent;
+        color: @green;
+        letter-spacing: 1px;
+
+        font-size: 12px;
+        font-weight: bold;
+
+        cursor: pointer;
+        transition: all 0.25s ease;
+
+    }
+
+    &.clicked span.number {
+        width: 15px;
+        height: 15px;
+        border-color: @gray;
+        border-width: 2px;
+        font-size: 0;
+        border-left-color: @green;
+        animation: rotating 2s 0.25s linear infinite;
+
+    }
+
+    &.add-theme span.number {
+        border-left-color: lightgreen;
+    }
+    &.delete-theme span.number {
+        border-left-color: red;
+    }
+
+    &.validate {
+        font-size: 13px;
+        color: green;
+        background: @green;
+
+        span.number {
+            color: #212121;
+        }
+
+        &:after {
+
+            content: "✔";
+        }
+    }
+
+    @keyframes rotating {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+}

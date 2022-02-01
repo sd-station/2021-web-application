@@ -1,0 +1,73 @@
+//main: ../#other-pages.trello-verification-index.less
+
+body {
+    background-color: #212121;
+    color: #efefef;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.fx {
+    display: flex;
+}
+
+h1 {
+    color: #9e2d00;
+    border-bottom: 1px solid #531a03;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.loading-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        filter: grayscale(100%);
+        height: 64px;
+        width: 64px;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    h2 {
+        color: #2c7dbe;
+        font-weight: 400;
+        font-size: 24px;
+        border-bottom: 2px solid #2c7dbe;
+        padding: 0 64px 0 15px;
+        margin: 0;
+        margin-bottom: 10px;
+        @media only screen and (max-width: 400px) {
+            font-size: 16px;
+        
+        }
+    }
+
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    header {
+        margin: 0 auto;
+
+    }
+}

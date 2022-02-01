@@ -1,0 +1,50 @@
+.file-path {
+  letter-spacing: 2px;
+}
+body {
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  color: red;
+}
+h2 {
+  margin: 20px;
+}
+developer-section .label-text {
+  color: powderblue;
+  max-width: 300px;
+  border-bottom: 1px solid #646464;
+  margin: 50px auto 10px auto;
+}
+developer-section .center-position {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+developer-section .link-container {
+  gap: 5px;
+  flex-direction: column;
+  max-width: 300px;
+}
+developer-section svg {
+  width: 24px;
+  opacity: 0.5;
+}
+developer-section a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+developer-section a::after {
+  content: attr(title);
+  font-size: smaller;
+}
+developer-section a:hover {
+  text-decoration: underline;
+}
+developer-section a:hover svg {
+  opacity: 0.9;
+  transition: 0.5s;
+}

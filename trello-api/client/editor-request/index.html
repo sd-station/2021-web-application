@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        pre {
+            margin: 0;
+            color: gray;
+        }
+
+        em {
+            color: #cfcfcf;
+        }
+
+        label {
+            flex-direction: column;
+        }
+        input-form label span{
+            text-align: left;
+            color: lightslategray    ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Editor</h1>
+    <input-form>
+        <label>
+            <span>File:</span>
+            <input id="txt-filename" value="E:\trello-api\client\trello\board\pages\boards\add">
+        </label>
+    </input-form>
+    <input-form>
+        <label>
+            <span>Fields:</span>
+            <div>
+                <style>
+                    textarea{
+                        font-size: large;
+                       
+                        background-color: #212121;
+                        font-family: Samim;
+                        width: 100%;
+                        min-height: 400px;height: 400px;
+                    }
+                </style>
+                <textarea id="txt-document"></textarea>
+                <div>
+                    <pre><em>name editor-name</em> Select Name</pre>
+                </div>
+                <div>
+                    <pre><em>txt-input</em> or <em>input txt-input</em> create text field</pre>
+                </div>
+                <div>
+                    <pre><em>textarea txt-input</em></pre>
+                </div>
+                <div>
+                    <pre><em>button txt-input</em></pre>
+                </div>
+            </div>
+        </label>
+
+
+
+        <label  class="submit-button">
+            <span></span>
+            <button id="btn-submit">submit form</button>
+        </label>
+    </input-form>
+    </input-form>
+</body>
+
+</html>

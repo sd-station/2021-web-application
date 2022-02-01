@@ -1,0 +1,102 @@
+//main: ../#basic-index.less
+
+center-box {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+
+
+    p {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    span.red {
+        color: red;
+    }
+
+    img,
+    .img,
+    >svg:first-child,
+    .cover>svg:first-child {
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 100px;
+    }
+
+    .cover {
+        margin-top: 40px;
+        border: 5px double fade(#3f51b5, 40%);
+        padding: 20px;
+        border-radius: 20px;
+        margin: 20px;
+
+        @media screen and (max-width:400px) {
+            width: 100%;
+            margin: 20px 0;
+            padding: 20px 5px;
+
+        }
+
+        background-color:var(--el-center-box-bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: fade(#3f51b5, 80%);
+        }
+
+        .img path {
+            fill: fade(#3f51b5, 80%);
+        }
+
+
+
+
+
+    }
+
+
+
+    .GM(@name, @color) {
+
+        .@{name} {
+            border: 5px double fade(@color, 40%);
+
+            h1,
+            h2 {
+                color: fade(@color, 80%);
+            }
+
+            .img path,
+            >svg:first-child path {
+                fill: fade(@color, 80%);
+            }
+        }
+    }
+
+
+    .GM(ocean, #409ba6);
+    .GM(ombre, #813967);
+    .GM(ombre-2, #b04677);
+    .GM(ombre-3, #d17aa6);
+    .GM(jungle, green);
+    .GM(sky, deepskyblue);
+    .GM(default, silver);
+
+    .GM(pink, pink);
+    .GM(yellow, yellow);
+    .GM(lime, lime);
+    .GM(blue, blue);
+    .GM(black, black);
+    .GM(orange, orange);
+    .GM(red, red);
+    .GM(purple, purple);
+    .GM(white, white);
+    .GM(green, green);
+}

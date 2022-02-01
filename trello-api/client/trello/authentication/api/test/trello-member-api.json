@@ -1,0 +1,96 @@
+{
+    "id": "569dcfe1431afa7707cbc967",
+    "bio": "",
+    "bioData": null,
+    "confirmed": true,
+    "memberType": "normal",
+    "username": "hosseinsedighian",
+    "aaId": null,
+    "activityBlocked": false,
+    "avatarHash": "2dde46da28b345c2719a3b18bcab722a",
+    "avatarUrl": "https://trello-members.s3.amazonaws.com/569dcfe1431afa7707cbc967/2dde46da28b345c2719a3b18bcab722a",
+    "fullName": "Hossein Sedighian",
+    "idEnterprise": null,
+    "idEnterprisesDeactivated": [],
+    "idMemberReferrer": null,
+    "idPremOrgsAdmin": [],
+    "initials": "HS",
+    "nonPublic": {},
+    "nonPublicAvailable": false,
+    "products": [],
+    "url": "https://trello.com/hosseinsedighian",
+    "status": "disconnected",
+    "aaBlockSyncUntil": null,
+    "aaEmail": null,
+    "aaEnrolledDate": null,
+    "avatarSource": "upload",
+    "credentialsRemovedCount": 0,
+    "domainClaimed": null,
+    "email": null,
+    "gravatarHash": "081e25b3a4869572d0d57ecf42597c42",
+    "idBoards": [
+        "56a5db8c68af89f2742837c6"
+    ],
+    "idOrganizations": [],
+    "idEnterprisesAdmin": [],
+    "loginTypes": null,
+    "marketingOptIn": {
+        "optedIn": false,
+        "date": "2018-04-26T16:56:21.189Z"
+    },
+    "messagesDismissed": [
+        {
+            "_id": "5f8ced55c4f91c6a807bfd2b",
+            "name": "team-join-cta-banner-5b63bb8bc36fbbc5422a450b",
+            "count": 8,
+            "lastDismissed": "2020-10-19T01:35:19.413Z"
+        },
+        {
+            "_id": "5f8e365e914ce62dd6eea28a",
+            "name": "1-nov-2018-tos-change-accepted",
+            "count": 1,
+            "lastDismissed": "2020-10-20T00:59:10.216Z"
+        }
+    ],
+    "oneTimeMessagesDismissed": [
+        "GoldIntro",
+        "OPEN_CARD_TIP",
+        "close-menu-of-first-board",
+        "WorkspacesPreamblePrompt-5a1d99f63ba8d2024e353776",
+        "headerMemberMenuAddAccount"
+    ],
+    "prefs": {
+        "privacy": {
+            "fullName": "public",
+            "avatar": "public"
+        },
+        "sendSummaries": true,
+        "minutesBetweenSummaries": 1,
+        "minutesBeforeDeadlineToNotify": 1440,
+        "colorBlind": false,
+        "locale": "en-US"
+    },
+    "trophies": [],
+    "uploadedAvatarHash": "2dde46da28b345c2719a3b18bcab722a",
+    "uploadedAvatarUrl": "https://trello-members.s3.amazonaws.com/569dcfe1431afa7707cbc967/2dde46da28b345c2719a3b18bcab722a",
+    "premiumFeatures": [],
+    "isAaMastered": false,
+    "siftDecision": null,
+    "ixUpdate": "96",
+    "limits": {
+        "boards": {
+            "totalPerMember": {
+                "status": "ok",
+                "disableAt": 4500,
+                "warnAt": 4050
+            }
+        },
+        "orgs": {
+            "totalPerMember": {
+                "status": "ok",
+                "disableAt": 850,
+                "warnAt": 765
+            }
+        }
+    }
+}

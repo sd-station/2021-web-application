@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/basic.css">
+
+</head>
+
+<body>
+    <h1>undefined</h1>
+
+    <input-form>
+        <label id="field-due-date" class="in-active"><span>Due Date: </span>
+            <input autocomplete="off" id="txt-due-date" type="datetime-local" placeholder="Due Date"></label>
+        <label><span>Name: </span>
+            <input autocomplete="off" id="txt-title" placeholder="Name"></label>
+        <label><span>About: </span>
+            <textarea id="txt-about" placeholder="About"></textarea></label>
+
+        <label><span>Project: </span>
+            <button class="btn icon action">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 3 20 20">
+                    <path
+                        d="M19 3L7 3C4.800781 3 3 4.800781 3 7L3 19C3 21.199219 4.800781 23 7 23L19 23C21.199219 23 23 21.199219 23 19L23 7C23 4.800781 21.199219 3 19 3Z M19 14L14 14L14 19L12 19L12 14L7 14L7 12L12 12L12 7L14 7L14 12L19 12Z">
+                    </path>
+                </svg>
+            </button>
+            <select id="txt-board-name" placeholder="Project"></select>
+
+
+        </label>
+
+        <label><span>Category: </span>
+            <button class="btn icon action">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 3 20 20">
+                    <path
+                        d="M19 3L7 3C4.800781 3 3 4.800781 3 7L3 19C3 21.199219 4.800781 23 7 23L19 23C21.199219 23 23 21.199219 23 19L23 7C23 4.800781 21.199219 3 19 3Z M19 14L14 14L14 19L12 19L12 14L7 14L7 12L12 12L12 7L14 7L14 12L19 12Z">
+                    </path>
+                </svg>
+            </button>
+            <select id="txt-list-name" placeholder="Category"></select>
+        </label>
+    
+        <label>
+            <span> </span>
+            <button id="btn-submit-form">
+                Create New
+            </button>
+        </label>
+    </input-form>
+
+    <style>
+        .in-active {
+            display: none;
+        }
+    </style>
+</body>
+
+</html>

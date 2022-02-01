@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+
+    <title>Document</title>
+</head>
+
+<body class="bg-dark">
+
+    <header class="page-header">
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 1 24 24">
+                <path
+                    d="M13 25C19.601563 25 25 19.601563 25 13C25 6.398438 19.601563 1 13 1C6.398438 1 1 6.398438 1 13C1 19.601563 6.398438 25 13 25Z M7.398438 11.800781C9.398438 8.898438 12.398438 6.199219 12.601563 6.101563C12.699219 6.101563 12.800781 6 13 6C13.199219 6 13.300781 6.101563 13.5 6.199219C13.601563 6.300781 16.699219 9 18.699219 11.898438C18.898438 12.101563 18.898438 12.398438 18.699219 12.699219C18.5 12.800781 18.300781 13 18 13L15.398438 13C15.398438 13 15.101563 19.101563 14.898438 19.398438C14.601563 19.699219 13.800781 20 13 20C12.300781 20 11.5 19.699219 11.199219 19.398438C11 19.101563 10.601563 13 10.601563 13L8 13C7.699219 13 7.5 12.898438 7.398438 12.601563C7.199219 12.398438 7.199219 12.101563 7.398438 11.800781Z">
+                </path>
+            </svg>
+        </a>
+        <h1> Project: <span class="txt-page-title"></span></h1>
+    </header>
+
+    <center-box>
+        <main class="cover ombre">
+
+            <svg class="img" xmlns="http://www.w3.org/2000/svg" viewBox="4 4 42 42">
+                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M21,36c0,1.1-0.9,2-2,2h-7 c-1.1,0-2-0.9-2-2V12c0-1.1,0.9-2,2-2h7c1.1,0,2,0.9,2,2V36z M40,24c0,1.1-0.9,2-2,2h-7c-1.1,0-2-0.9-2-2V12c0-1.1,0.9-2,2-2h7 c1.1,0,2,0.9,2,2V24z">
+                </path>
+            </svg>
+
+            <h2>  <span class="txt-page-title"></span> Project Overview</h2>
+
+            <trello-cards></trello-cards>
+
+
+
+            <h2>Actions</h2>
+            <div class="fx column start">
+                <a class="btn action link" href="/trello/board/edit/index.html?mode=edit"> Rename Project </a>
+                <a class="btn action link" href="/trello/board/members/index.html"> Manage Members </a>
+                <a class="btn action link" href="/trello/list/index.html"> Manage Categories </a>
+                <a class="btn action link create" href="/trello/card/add/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 0 20 26">
+                        <path
+                            d="M6 0C4.34375 0 3 1.34375 3 3L3 23C3 24.65625 4.34375 26 6 26L20 26C21.65625 26 23 24.65625 23 23L23 3C23 1.34375 21.65625 0 20 0Z M5 2L21 2L21 24L5 24Z M7 6L7 8L9 8L9 6Z M11 6L11 8L19 8L19 6Z M7 10L7 12L9 12L9 10Z M11 10L11 12L18 12L18 10Z M7 14L7 16L9 16L9 14Z M11 14L11 16L19 16L19 14Z M7 18L7 20L9 20L9 18Z M11 18L11 20L18 20L18 18Z">
+                        </path>
+                    </svg>
+                    Add New Card </a>
+                <button class="btn danger link" id="btn-delete-board"><span> Delete <span class="txt-page-title"></span> Board </span></button>
+            </div>
+
+
+        </main>
+    </center-box>
+</body>
+
+</html>

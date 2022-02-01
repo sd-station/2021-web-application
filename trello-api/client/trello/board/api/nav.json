@@ -1,0 +1,30 @@
+[
+    {
+        "type": "title",
+        "text": "[selected-board] Board Commands" 
+    },
+   
+    {
+        "type": "link",
+        "text": "Update Board",
+        "link": ""
+    },
+    {
+        "type": "link",
+        "text": "Delete Board",
+        "link": ""
+    },
+    {
+        "type": "link",
+        "text": "Get Lists",
+        "link": "/trello/list/of-board.html"
+    },
+    {
+        "type": "link",
+        "text": "Add List",
+        "link": ""
+    },
+    {
+        "type": "finish"
+    }
+]

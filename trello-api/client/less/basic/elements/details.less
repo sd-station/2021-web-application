@@ -1,0 +1,43 @@
+//main: ../#basic-index.less
+
+
+details {
+    margin-top: 20px;
+
+    summary {
+        user-select: none;
+        color: var(--el-details-summary);
+    }
+
+    pre {
+        margin: 0;
+        padding: 10px 20px;
+        background-color: fade(white, 5%);
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+
+        .u-title {
+            color: var(--el-details-pre-title); 
+        }
+
+        .u-value {
+            &.string {
+                color: rgba(248, 79, 0, 0.712);
+            }
+
+            &.null {
+                color: #707070;
+            }
+
+            &.bool {
+                color: deeppink;
+            }
+
+            &.number {
+                color: var(--el-details-pre-number);  
+            }
+        }
+    }
+
+}
+

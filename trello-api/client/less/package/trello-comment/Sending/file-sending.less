@@ -1,0 +1,46 @@
+//main: ../#trello-message-container.less
+
+
+
+.file-sending {
+
+    .file-info {
+
+        text-decoration: none;
+        color: black;
+    }
+
+
+    div.preview-icon {
+        background-image: url(/assets/icon/upload.svg);
+        background-size: 110%;
+        background-color: #000;
+        background-repeat: no-repeat;
+
+        background-position: center center;
+    }
+
+    progress {
+        margin: 10px 0;
+        width: 200px;
+        height: 10px;
+        background-color: #000;
+        display: block;
+
+    }
+
+    .btn-cancel{
+        border: none;
+        outline: none;
+        color: red;
+        text-decoration: underline;
+        background-color: transparent;
+        &:hover{
+            cursor: pointer;
+        }
+
+        &:active{
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+//main: ../#basic-index.less
+
+
+
+item-container , .item-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: flex-start;
+    &.mx800{
+        align-items:unset;
+        max-width: 800px;
+    }
+    gap: 4px;
+    @media screen and (max-width:400px) {
+ 
+        width: 100%;
+    }
+    >* {
+        flex-basis: 60px;
+        min-width: 300px;
+
+        @media screen and (max-width:400px) {
+            min-width: unset;
+            width: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,47 @@
+body {
+  padding-bottom: 300px;
+}
+developer-section {
+  position: fixed;
+  bottom: 2px;
+  display: block;
+  width: 100%;
+}
+developer-section .label-text {
+  color: #4d777e;
+  text-align: start;
+  display: flex;
+  width: 370px;
+  margin-top: -5px;
+}
+developer-section .label-text::before {
+  flex-grow: 1;
+  content: " ";
+  background: linear-gradient(#4d777e, #4d777e);
+  background-size: 98% 1px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+developer-section .link-container {
+  gap: 5px;
+  margin: 10px;
+  display: flex;
+  margin: 0 10px;
+}
+developer-section svg {
+  width: 24px;
+  height: 24px;
+}
+developer-section a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 2px;
+}
+developer-section a:hover {
+  text-decoration: underline;
+}
+developer-section a:hover svg {
+  transition: 0.5s;
+  transform: scale(1.5);
+}

@@ -1,0 +1,91 @@
+//main: ../#trello-message-container.less
+
+
+
+msg-objects {
+    display: flex;
+
+
+
+    div.preview-icon {
+        user-select: none;
+        height: 64px;
+        width: 64px;
+        flex-basis: 64px;
+        min-width: 64px;
+        background-color: @-msg-obj-background-light;
+        border-radius: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        font-weight: bold;
+        color: @-msg-obj-foreground-light;
+
+        .dark-mode & {
+            background-color: @-msg-obj-background-dark;
+            color: @-msg-obj-foreground-dark;
+
+        }
+
+        .file & {
+
+            background-image: url(/assets/icon/file-check.svg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: center center;
+
+          
+
+        }
+       
+        // .unknown & {
+        //     color: black;
+        //     background-image:url(/assets/icon/file-unknown.svg) ;
+        //     background-repeat: no-repeat;
+        //     background-size:  70%;
+        //     background-position: center center ;
+        // }
+    }
+
+    div.file-info {
+        padding: 15px 10px;
+        flex-grow: 1;
+
+        color: @-msg-obj-link-foreground-light;
+
+        .dark-mode & {
+            color: @-msg-obj-link-foreground-dark;
+
+        }
+
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+
+        path {
+            fill: rgb(111, 163, 180)
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        align-items: center;
+
+        span.file-name {
+            padding: 5px;
+        }
+
+    }
+}
+
+
+.unknown {
+    color: red;
+}

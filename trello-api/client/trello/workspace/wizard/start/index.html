@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/basic.css">
+
+</head>
+
+<body style="padding-bottom: 0;">
+    <h1>New Work Group</h1>
+
+    <input-form>
+        <label><span>Title: </span>
+            <input required="" id="txt-workspace-name" autocomplete="off" placeholder="Title">
+        </label>
+
+        <label class="submit-button">
+            <span> </span>
+            <button id="btn-submit-form">
+                Create New
+            </button>
+        </label>
+
+        <details>
+            <summary>Advanced</summary>
+            <label><span>Workspace Id: </span>
+                <input id="txt-workspace-shortname" autocomplete="off" placeholder="id" minlength="3">
+            </label>
+
+            <label><span>Website: </span>
+                <div>
+                    <input id="txt-workspace-website" autocomplete="off" placeholder="workgroup id" minlength="3">
+                    <figcaption>Unique ID of lowercase letters _ and 0-9</figcaption>
+                </div>
+            </label>
+
+
+
+            <label><span>About: </span>
+                <div>
+                    <textarea id="txt-workspace-desc" autocomplete="off" placeholder="About" minlength="3"></textarea>
+                    <figcaption>What is your goal in creating this working group?</figcaption>
+
+                </div>
+            </label>
+        </details>
+
+
+    </input-form>
+
+
+
+</body>
+
+</html>

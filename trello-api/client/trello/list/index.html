@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        <a href="/trello/workspace/index.html" id="work-space-title">Workspace</a>
+        / <a href="/trello/board/index.html" id="board-title">Board</a>
+        / Category
+    </h1>
+
+    <item-container></item-container>
+
+    <h2>Actions</h2>
+    <div class="actions">
+        <a class="btn action link" id="btn-show-all" >Show All Categories</a>
+        <a class="btn action link create" href="./add/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="4 2 16 20">
+                <path d="M4 2L4 7L20 7L20 2L4 2 z M4 9L4 15L20 15L20 9L4 9 z M4 17L4 22L20 22L20 17L4 17 z"></path>
+            </svg>
+            Add New Category To Board</a>
+    </div>
+
+    <template>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="4 2 16 20">
+            <path d="M4 2L4 7L20 7L20 2L4 2 z M4 9L4 15L20 15L20 9L4 9 z M4 17L4 22L20 22L20 17L4 17 z"></path>
+        </svg>
+
+        <div>
+            <span>{{title}}</span>
+        </div>
+
+    </template>
+</body>
+
+</html>

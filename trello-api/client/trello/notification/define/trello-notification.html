@@ -1,0 +1,45 @@
+<div class="fx">
+    <div class="part-date">{{date}}</div>
+    <div class="part-title">{{title}}</div>
+    <a href="/trello/card/view/index.html?card-id={{cardid}}">{{cardname}}</a>
+</div>
+<div class="part-content">{{content}}</div>
+<div class="part-reaction">{{reaction}}</div>
+<div class="part-owner">{{owner}}</div>
+
+<style>
+    trello-notification {
+        border: 1px dashed #707070;
+        margin: 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .part-date {
+        color: orange;
+        font-size: 14px;
+    }
+
+    .part-title {
+        font-size: 14px;
+        color: #707070;
+    }
+
+    .part-content {
+        color: white;
+        padding: 5px 10px;
+    }
+
+    .part-owner {
+        font-size: 14px;
+        color: #707070;
+        align-self: flex-end;
+    }
+
+    .fx {
+        display: flex;
+        gap: 5px;
+    }
+</style>

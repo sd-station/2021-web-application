@@ -1,0 +1,36 @@
+//main: ../#basic-index.less
+
+
+
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    column-gap: 5px;
+    @media only screen and (max-width: 400px) {
+        display: block;
+    }
+}
+
+dt {
+    grid-column-start: 1;
+    color: #707070;
+    text-align: right;
+    text-transform: capitalize;
+    &::after {
+        content: ":";
+    }
+
+    @media only screen and (max-width: 400px) {
+        text-align: left;
+    }
+}
+
+dd {
+    grid-column-start: 2;
+    margin-left: 0;
+    
+    @media only screen and (max-width: 400px) {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+}

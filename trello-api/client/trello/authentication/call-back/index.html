@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.html.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <main>
+        <h1>Identifying</h1>
+        <article>
+            <header>
+                <div class="logo">
+                    <img src="/assets/icons/social/trello-color.svg" alt="">
+                </div>
+                <div class="title">
+                    <h2>Session Information</h2>
+                </div>
+            </header>
+            <identify-card>
+                <div class="loading-center">
+                    <div class="pre-loading">
+                        <img src="/assets/icons/pre-load.svg" alt="" srcset="">
+                    </div>
+                </div>
+            </identify-card>
+
+
+
+        </article>
+
+        <article>
+            <!-- <h1>Welcome (Back) To Testpass </h1>
+            Has Account ?
+            <p>You Will Continue To Dashboard Automatically in 5 Sec
+                <br>
+                Do not Like to Waiting Click
+                <a href="/app/dash-board/">Here</a>
+            </p>
+
+            New User ? -->
+
+            <button class="btn-continue-to-dashboard btn link action warning">Continue To Dashboard</button>
+            <!-- <button class="btn-create-new-account">Setup Password</button> -->
+
+        </article>
+
+
+
+    </main>
+
+
+    <template class="identity-card">
+        <section class="card-area">
+            <div class="card-item">
+                <section class="profile">
+                    <img src="{{profile-photo}}" alt="">
+                </section>
+                <section class="info">
+                    <h3>{{profile-name}}</h3>
+                    <a href="{{profile-link}}">@{{username}}</a>
+                    <section class="profile-info fx">
+                        <div class="link-qr-code">
+                            <img src="{{qr-code-link}}" alt="qr code" />
+                        </div>
+                        <div class="expire-date">
+                            <time>please wait</time>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+        <section class="card-commands">
+       
+            <button>Update</button>
+            <button class="action-log-out">Log out</button>
+        </section>
+    </template>
+
+</body>
+
+</html>

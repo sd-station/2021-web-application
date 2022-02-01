@@ -1,0 +1,229 @@
+//main: ../#basic-index.less
+
+
+
+input-form {
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+
+    @import "input-form/check-list.less";
+
+
+    figcaption {
+       font-size: 0.9rem;
+       margin: 0;
+    }
+
+    span {
+
+        min-width: 150px;
+        text-align: right;
+        padding: 5px;
+
+        @media screen and (max-width:400px) {
+            text-align: unset;
+
+        }
+
+    }
+
+    &.vertical-form {
+        span {
+            text-align: unset;
+        }
+
+        label {
+            flex-direction: column;
+        }
+    }
+
+    >div {
+        margin: 10px;
+        display: flex;
+    }
+
+    label {
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    input {
+        flex-grow: 1;
+        border: 1px dashed silver;
+        padding: 5px 10px;
+        outline: none;
+        background-color: #3a3a3a;
+        color: white;
+        caret-color: orange;
+        
+        &:read-only {
+            border: none;
+            background-color: transparent;
+            color: var(--g-foreground);
+        }
+
+        &:invalid {
+            border: 1px dashed red;
+        }
+
+        &:valid {
+            border: 1px dashed green;
+        }
+
+        &:required {
+            &::placeholder {
+                color: red;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            min-width: 100%;
+        }
+
+        &.short-input{
+            min-width: unset;
+            max-width: 2rem;
+        }
+    }
+
+    textarea {
+        caret-color: orange;
+        border: 1px dashed silver;
+        padding: 5px 10px;
+        outline: none;
+        background-color: #3a3a3a;
+        color: white;
+        min-width: 300px;
+        min-height: 100px;
+
+        font-family: Samim;
+
+
+        @media only screen and (max-width: 400px) {
+            min-width: 100%;
+        }
+
+    }
+
+    select {
+        border: 1px dashed silver;
+        padding: 5px 10px;
+        outline: none;
+        background-color: #3a3a3a;
+        color: white;
+        caret-color: orange;
+
+        @media only screen and (max-width: 400px) {
+            min-width: 100%;
+        }
+    }
+
+    .icon {
+        order: 3;
+
+        +select {
+            @media only screen and (max-width: 400px) {
+                min-width: calc(100% - 30px);
+                order: 2;
+            }
+        }
+    }
+
+    button {
+        background-color: orange;
+        color: black;
+    }
+
+
+    .submit-button {
+        @green: #1ECD97;
+
+
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -65px;
+            margin-top: -20px;
+            width: 130px;
+            height: 40px;
+            text-align: center;
+        }
+
+        button {
+            outline: none;
+            height: 40px;
+            text-align: center;
+            width: 130px;
+            border-radius: 40px;
+            background: #212121;
+            border: 2px solid @green;
+            color: @green;
+            letter-spacing: 1px;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+
+            cursor: pointer;
+            transition: all 0.25s ease;
+
+            &:hover {
+                color: white;
+                background: @green;
+            }
+
+            &:active {
+                //letter-spacing: 2px;
+                letter-spacing: 2px;
+            }
+
+
+        }
+
+        .onclic {
+            width: 40px;
+            border-color: var(--loading-border);
+            border-width: 3px;
+            font-size: 0;
+            border-left-color: @green;
+            animation: rotating 2s 0.25s linear infinite;
+
+
+
+            &:hover {
+                color: @green;
+                background: white;
+            }
+        }
+
+        .validate {
+            font-size: 13px;
+            color: white;
+            background: @green;
+
+            &:after {
+                font-family: 'FontAwesome';
+                content: "\f00c";
+            }
+        }
+
+        @keyframes rotating {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+    }
+
+}

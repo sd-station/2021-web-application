@@ -1,0 +1,77 @@
+//main: main-window.index.less
+@top-distance : 40px;
+
+side-menu {
+
+    
+    nav {
+        display: flex;
+        user-select: none;
+        height: @top-distance ;
+        font-size: 14px;
+
+        div {
+            padding:  0 10px;
+            background-color: #323232;
+            margin: 1px;
+            text-align: center;
+            display: flex;
+            &:hover {
+                background-color: #484848;
+                cursor: pointer;
+            }
+            
+            align-items: center;
+            justify-content: center;
+            svg{
+                width: 24px;
+                height: 24px;
+                path{
+                    fill: white;
+                }
+            }
+        }
+    }
+
+    content-menu {
+        position: fixed;
+        top: @top-distance;
+        background-color: #212121;
+        min-width: 300px;
+    
+        max-width: 80vw;
+        @media screen and (max-width: 600px) {
+            max-width: unset;
+            padding: 0;
+            width: 100%;
+        }
+        left: 0;
+        bottom: 0;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: none;
+     
+
+        background-color: black;
+        box-shadow: 10px 0 30px fade(black, 40%);
+        border-right: 1px solid black;
+
+        &.active-side-menu  {
+            display: block;
+        }
+
+        iframe{
+            width:100%;
+            height:100%;
+            border: none;
+        }
+    }
+
+    .active-side-menu {
+        body {
+            overflow: hidden;
+        }
+    }
+
+
+}

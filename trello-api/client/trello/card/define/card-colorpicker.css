@@ -1,0 +1,13 @@
+div {
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(192, 192, 192, 0.322);
+}
+:host {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: repeat(4, 40px);
+}

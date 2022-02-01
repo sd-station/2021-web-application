@@ -1,0 +1,92 @@
+//main: main-window.index.less
+
+content-view {
+    display: flex;
+    flex-grow: 1;
+
+    @media screen and (max-width:600px) {
+
+        width: 100%;
+
+        main {
+            width: 100%;
+        }
+
+    }
+
+}
+
+html {
+    font-size: 18px;
+
+}
+
+body {
+    font-size: 1rem;
+    background-color: #161616;
+    display: flex;
+    margin: 0;
+
+    @media only screen and (max-width: 400px) {
+        flex-direction: column;
+    }
+
+}
+
+
+
+iframe {
+    background-color: #212121;
+    width: 600px;
+    height: calc(100vh - 60px);
+}
+
+@media screen and (max-width:600px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+
+
+
+.command-bar {
+    background-color: #000000;
+
+    margin: 0;
+    font-family: consolas;
+    padding: 0 10px;
+    cursor: text;
+    color: red;
+    display: flex;
+
+    input {
+        font-family: consolas;
+        flex-grow: 1;
+        color: #cfcfcf;
+        border-color: transparent;
+        background-color: transparent;
+        outline: none;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+
+}
+
+
+
+main>div {
+    margin: 10px;
+
+}
+
+
+
+
+hr {
+    background-color: transparent;
+    border-color: #464646;
+    margin: 5px 0;
+    border-style: dashed;
+}

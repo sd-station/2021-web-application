@@ -1,0 +1,46 @@
+<main>
+    <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 0 20 26">
+            <path
+                d="M6 0C4.34375 0 3 1.34375 3 3L3 23C3 24.65625 4.34375 26 6 26L20 26C21.65625 26 23 24.65625 23 23L23 3C23 1.34375 21.65625 0 20 0Z M5 2L21 2L21 24L5 24Z M7 6L7 8L9 8L9 6Z M11 6L11 8L19 8L19 6Z M7 10L7 12L9 12L9 10Z M11 10L11 12L18 12L18 10Z M7 14L7 16L9 16L9 14Z M11 14L11 16L19 16L19 14Z M7 18L7 20L9 20L9 18Z M11 18L11 20L18 20L18 18Z">
+            </path>
+        </svg>
+    </div>
+    <div><span>{{name}}</span><span><em>{{desc}}</em></span></div>
+</main>
+
+<style>
+    svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    svg path {
+        fill: #707070;
+    }
+
+    main {
+        border: 1px solid #707070;
+        padding: 5px;
+        cursor: pointer;
+        display: flex;
+        border-radius: 10px;
+        background-color: #363636;
+        align-items: center;
+        color: #efefef;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        margin-block-end: 5px;
+    }
+
+    em {
+        font-size: 14px;
+    }
+
+    main>div>span {
+        display: block;
+    }
+</style>

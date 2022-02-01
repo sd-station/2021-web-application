@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/trello/membership/define/joined-membership.css">
+
+
+<main>
+    <section class="display-sec">
+        <!-- show image -->
+        <img id="profile-image" style="background-image: url({{image}});">
+        <!-- show info -->
+        <button id="btn-name">
+            <div class="name">{{name}}</div>
+            <div>@{{username}}</div>
+        </button>
+    </section>
+
+    <!-- show id -->
+    <section class="info-sec"><input readonly value="{{id}}"> </section>
+</main>
+
+
+<aside>
+    <button id="btn-remove" class="btn-danger {{option-remove}}"> remove </button>
+</aside>

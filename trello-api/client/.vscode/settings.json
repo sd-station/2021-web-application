@@ -1,0 +1,20 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#1D3128",
+        "titleBar.activeBackground": "#294538",
+        "titleBar.activeForeground": "#FAFCFB"
+    },
+    "files.exclude": {
+        "**/*-workspace": true,
+        "**/*.cmd": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.css": {
+            "when": "$(basename).less"
+        },
+        "**/*.js.map": true,
+        "**/*.css.map": true,
+      
+    },
+}

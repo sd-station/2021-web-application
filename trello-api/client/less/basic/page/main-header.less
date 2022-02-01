@@ -1,0 +1,51 @@
+//main: ../#basic-index.less
+
+@inactive-color:#707070;
+@active-color:#efefef;
+
+.page-header , page-header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+
+    h1 {
+        margin: 0;
+        color: @active-color;
+        letter-spacing: 2px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+        &:hover svg path {
+            fill: @active-color;
+            transition: 0.5s;
+        }
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+
+        path {
+            fill: @inactive-color;
+        }
+    }
+
+    +* {
+        margin-top: 40px;
+    }
+}
+
+ 

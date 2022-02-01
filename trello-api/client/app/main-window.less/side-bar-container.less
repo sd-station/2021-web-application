@@ -1,0 +1,143 @@
+//main: main-window.index.less
+
+
+// ::-webkit-scrollbar {
+//     max-width: 15px;
+//     background-color: #363636;
+// }
+
+// ::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background-color: #646464;
+
+// }
+
+
+
+
+.side-bar-container {
+    user-select: none;
+    overflow-y: auto;
+    height: 100vh;
+    gap: 5px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+
+
+    * {
+        font-weight: 100;
+    }
+
+
+
+
+    a.h2 {
+        margin: 0;
+        font-size: 1rem;
+        user-select: none;
+        text-transform: capitalize;
+        color: #cfcfcf;
+
+
+        @media (pointer:coarse) {
+            padding: 10px 10px 7px 10px;
+        }
+
+        letter-spacing: 2px;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+
+        &::first-letter {
+            color: lightgreen;
+        }
+    }
+
+
+
+    .active {
+        transition: 0.33s;
+        background-color: fade(#707070, 40%);
+
+        &.show-all {
+
+            background-color: fade(rgb(209, 56, 209), 40%);
+        }
+    }
+
+
+
+}
+
+
+#sidemenu-link-container {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 100px;
+
+    a {
+        display: block;
+
+        text-transform: capitalize;
+        transition: 300ms;
+        max-width: 550px;
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+
+
+
+        @media (pointer:coarse) {
+            padding: 10px 10px 7px 10px;
+        }
+
+        &.pending {
+            color: #a0a0a0;
+            order: 3;
+        }
+
+        &.waiting {
+            color: #a0a0a0;
+
+        }
+
+        &.running {
+            color: orange;
+
+        }
+
+        &.next {
+            color: red;
+
+        }
+
+        &:hover {
+
+
+            color: white;
+            background-color: black;
+            transform: translateX(-10px);
+
+        }
+
+    }
+
+
+
+
+    .functional {
+        color: rgb(151, 115, 22);
+        order: 2;
+
+    }
+}

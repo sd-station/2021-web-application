@@ -1,0 +1,31 @@
+// out: ./
+
+app-timeline {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: attr(class);
+        color: white;
+        font-family: monospace;
+        background-color: #212121;
+        padding: 0 10px;
+        text-transform: uppercase;
+        order: 0;
+        margin-left: 40px;
+    }
+
+    &::after {
+        position: absolute;
+        content: attr(title);
+        color: white;
+        font-family: monospace;
+        background-color: #212121;
+        padding: 0 10px;
+        text-transform: uppercase;
+        order: 0;
+        margin-left: 250px;
+        bottom: 5px;
+        color: #e100ff;
+    }
+}

@@ -1,0 +1,34 @@
+//main: ../#trello-workspace-summary-index.less
+@color: #3fb549;
+
+:root {
+    display: flex;
+}
+
+:host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px dashed fade(@color  , 40%) ;
+    flex-basis: auto !important;
+    width: 100%;
+    padding:2px 5px;
+ 
+}
+
+:host:not(:first-child){
+    margin-top: 10px;
+}
+
+
+
+svg {
+    fill: @color ;
+    width: 24px;
+    height: 24px;
+}
+
+h3 {
+    color: @color;
+    margin: 0;
+}

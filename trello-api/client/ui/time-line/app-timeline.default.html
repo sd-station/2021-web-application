@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    #shared
+    <link rel="stylesheet" href="/ui/time-line/app-timeline.css">
+
+    #default
+    <div class="content">
+        <p> No limit </p>
+    </div>
+
+    #complete
+    <div class="content bg-success">
+        <p> Completed </p>
+    </div>
+
+    #time-front
+    <div class="content">
+        <p> Not Stared </p>
+        <span class="txt-normal"> {{time-text}} </span>
+    </div>
+    
+ 
+
+    #start-before
+    <div class="content">
+        <p>  Started </p>
+        <span class="txt-warning"> {{time-text}} </span>
+    </div>
+
+    #time-before
+    <div class="content bg-danger">
+        <p>  Time is over </p>
+        <span class="txt-danger"> {{time-text}} </span>
+    </div>
+
+    #due-after
+    <div class="content">
+        <p>  Due Date </p>
+        <span class="txt-warning"> {{time-text}} </span>
+    </div>
+
+    #time-in
+    <div class="content">
+        <p  class="txt-warning">  Running   </p>
+        <span class="txt-warning"> {{time-text}} </span>
+    </div>
+
+
+    #unknown
+    <div class="content">
+        <p> <span >{{state}}</span>   </p>
+        <span class="txt-danger">  Not Found </span>
+  
+    </div>
+    #end
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+//main: ../#basic-index.less
+
+
+.fx {
+    display: flex;
+    gap: 5px;
+
+    &.column,
+    &.col {
+        flex-direction: column;
+
+        &.start {
+            align-items: flex-start;
+        }
+    }
+
+    &.normal {
+        margin: 5px;
+    }
+
+    &.start:not(.column) {}
+}

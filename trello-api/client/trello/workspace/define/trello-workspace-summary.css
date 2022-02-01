@@ -1,0 +1,24 @@
+:root {
+  display: flex;
+}
+:host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px dashed rgba(63, 181, 73, 0.4);
+  flex-basis: auto !important;
+  width: 100%;
+  padding: 2px 5px;
+}
+:host:not(:first-child) {
+  margin-top: 10px;
+}
+svg {
+  fill: #3fb549;
+  width: 24px;
+  height: 24px;
+}
+h3 {
+  color: #3fb549;
+  margin: 0;
+}

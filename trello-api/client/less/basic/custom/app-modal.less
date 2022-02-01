@@ -1,0 +1,53 @@
+//main: ../#basic-index.less
+
+
+app-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(33, 33, 33, 0.7);
+    display: block;
+
+    modal-dialog {
+        display: block;
+        border: 2px double #cfcfcf;
+        background-color: rgba(207, 207, 207, 0.219);
+        width: 90%;
+        max-width: 400px;
+        min-height: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 20px;
+        padding: 10px;
+        padding-top: 20px;
+
+        overflow: hidden;
+
+        &.float {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 80vh;
+
+        }
+
+        iframe {
+            width: 100%;
+            flex-grow: 1;
+            border: none;
+
+           
+
+        }
+
+     
+    }
+
+
+}
+
+.solid-dialog modal-dialog {
+    background-color: #cfcfcf;
+}

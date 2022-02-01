@@ -1,0 +1,33 @@
+//main: ../#basic-index.less
+
+
+.default-message {
+    min-width: 300px;
+    @media only screen and (max-width: 400px) {
+        min-width: unset;
+    }
+    max-width: 80vw;
+    border: 1px dashed fade(silver, 20%);
+ 
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: fade(silver, 10%);
+    align-self: stretch;
+    margin: 10px auto;
+    min-height: 160px;
+ 
+    color: #707070;
+
+    font-weight: 400;
+ 
+
+    svg {
+        width: 64px;
+        height: 64px;
+        opacity: 0.5;
+    }
+}

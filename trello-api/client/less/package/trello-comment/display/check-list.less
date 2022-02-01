@@ -1,0 +1,32 @@
+//main: ../#trello-comment-index.less
+
+
+
+.check-item {
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    &::before {
+        width: 20px;
+        height: 20px;
+        content: " ";
+        border: 1px solid #707070;
+        margin: 5px 10px;
+
+    }
+
+    &.complete::before{
+        background-color: rgba(53, 255, 3, 0.432);
+    } 
+
+    &.incomplete {
+         color:  orange;
+    } 
+    &:hover{
+        cursor: pointer;
+
+        span{
+            cursor: text; 
+        }
+    }
+}

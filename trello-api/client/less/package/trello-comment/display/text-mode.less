@@ -1,0 +1,170 @@
+//main: ../#trello-message-container.less
+
+
+
+
+
+
+
+message-line {
+    display: flex;
+
+
+    &.selected {
+        background-color: rgba(255, 255, 255, 0.07);
+
+    }
+
+
+    margin-top : 5px;
+}
+
+msg-item {
+
+    padding: 2px;
+    border-radius: 7px 7px 7px 0;
+    max-width: 400px;
+
+
+    color: @--foreground-light;
+    background-color: @--background-light;
+
+    .dark-mode & {
+        color: @--foreground-dark;
+        background-color: @--background-dark;
+    }
+
+    position: relative;
+
+
+    msg-content {
+        display: block;
+        padding: 2px 5px;
+        white-space: pre-line;
+        min-width: 250px;
+
+        img {
+
+
+
+            &.sending-image {
+                background-size: contain;
+            }
+        }
+
+        &.lng-fa {
+            direction: rtl;
+            font-family: Samim;
+        }
+    }
+
+
+
+    msg-info {
+        display: flex;
+        font-size: smaller;
+        font-weight: 100;
+        justify-content: flex-end;
+        padding: 2px 5px 0 5px;
+
+        time {
+            color: @-chat-box-alt-fore-color-light;
+
+            .dark-mode & {
+                color: @-chat-box-alt-fore-color-dark;
+            }
+        }
+    }
+
+    &.msg-recieved {
+        &::before {
+            position: absolute;
+
+            width: 0;
+            height: 0;
+            border-bottom: 15px solid @-item-box-before-border-color;
+            border-left: 10px solid transparent;
+
+            .dark-mode & {
+                border-left: 5px solid @-item-box-before-border-color-dark;
+            }
+
+            content: " ";
+            bottom: 0;
+            margin-left: -10px;
+        }
+    }
+
+    &.msg-send {
+        &::before {
+            position: absolute;
+            // width: 5px;
+            // height: 5px;
+            // border-radius: 5px;
+            // border-right: 5px solid @item-box-sendmode-background;
+            width: 0;
+            height: 0;
+            border-bottom: 15px solid @item-box-sendmode-background;
+            border-right: 10px solid transparent;
+
+            .dark-mode & {
+                border-right: 5px solid @item-box-sendmode-background-dark;
+            }
+
+            content: " ";
+            bottom: 0;
+            right: 0;
+            margin-right: -7px;
+        }
+
+        margin-left: auto;
+
+        background-color: @item-box-sendmode-background;
+
+        .dark-mode & {
+            background-color: @item-box-sendmode-background-dark;
+        }
+
+        msg-contnet {}
+
+        msg-info {
+            color: lighten(rgb(30, 76, 145), 40%);
+        }
+
+        msg-state {
+            margin-left: 5px;
+
+            &.state-normal::after {
+                content: "normal";
+                opacity: 0.7;
+            }
+
+            &.state-sending::after {
+                opacity: 0.7;
+                content: "sending...";
+            }
+
+            &.state-sended::after {
+                content: "sended";
+            }
+
+            &.state-recieved::after {
+                content: "recieved";
+            }
+
+            &.state-read::after {
+                content: "read";
+            }
+
+            &.state-failed::after {
+                content: "failed";
+                color: rgb(247, 104, 104);
+                text-shadow: 1px 1px 1px black;
+            }
+        }
+    }
+}
+
+img {
+    display: block;
+}

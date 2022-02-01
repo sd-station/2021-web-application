@@ -1,0 +1,41 @@
+//main: ../#trello-comment-index.less
+
+.state-over::after {
+    
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.state-changed {
+    position: relative;
+
+
+}
+
+.state-changed::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    top: 0;
+    background: fade(red, 20%);
+    animation: progress 1.5s infinite ease-in-out;
+}
+
+@keyframes progress {
+    0% {
+        left: 0;
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        right: 0;
+        width: 0;
+    }
+}
+
+ 

@@ -1,0 +1,42 @@
+//out: ./
+
+trello-checkitem {
+    display: flex;
+    margin-inline-start: 10px;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 5px;
+
+    .check-box {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        border-radius: 5px;
+        border: 1px solid silver;
+        box-shadow: 1px 1px 2px fade(black , 30%);
+    }
+
+    .chk-content{
+        // max-width: 700px;
+        overflow-x: hidden;
+        word-wrap: break-word;
+        flex-grow: 1;
+    }
+
+    &.complete .check-box {
+        background-color: green;
+    }
+
+    &.state-changed .check-box {
+        border-color: transparent;
+        background-color: unset;
+        background-image: url(/assets/icons/pre-load.svg);
+    }
+    
+}
+
+
+ 
+
+ 
+ 

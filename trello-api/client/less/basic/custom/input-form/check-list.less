@@ -1,0 +1,46 @@
+//main: ../input-form.less
+
+[type="checkbox"] {
+
+    display: none;
+
+    +span {
+        text-align: left;
+        text-transform: capitalize;
+        cursor: pointer;
+        display: flex;
+        transition: 0.4s;
+        white-space: wrap;
+        flex-grow: 1;
+
+
+
+        &:after {
+            margin-left: auto;
+            content: " ";
+            height: 25px;
+            width: 50px;
+            background-color: #000000;
+            background-image: radial-gradient(#707070 10px, transparent 12px);
+            background-size: 25px 25px;
+            background-repeat: no-repeat;
+            background-position: 2px center;
+            transition: 0.4s;
+            border-radius: 15px;
+
+        }
+    }
+
+
+    &:checked {
+        +span {
+            color: #2196F3;
+        }
+
+        +span:after {
+            background-color: #2196F3;
+            background-image: radial-gradient(#efefef 10px, transparent 12px);
+            background-position: 25px center;
+        }
+    }
+}

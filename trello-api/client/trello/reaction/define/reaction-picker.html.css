@@ -1,0 +1,22 @@
+:host {
+  position: fixed;
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+:host > * {
+  background-color: #212121;
+}
+:host h1 {
+  margin: 0;
+}
+:host row-container {
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+:host .transparent-area {
+  background-color: rgba(33, 33, 33, 0.1);
+  height: 50%;
+}

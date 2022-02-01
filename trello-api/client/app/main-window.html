@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- head-content -->
+    <link rel="stylesheet" href="./main-window.html.css">
+    <title>Trello Api Tester</title>
+</head>
+
+<body style="background-image: none; ">
+
+    <side-menu>
+        <nav>
+            <div data-action="nav/menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 5 20 14">
+                    <path d="M2 5L2 7L22 7L22 5L2 5 z M2 11L2 13L22 13L22 11L2 11 z M2 17L2 19L22 19L22 17L2 17 z">
+                    </path>
+                </svg>
+            </div>
+
+
+            <div data-action="nav/calendar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 0 46 48">
+                    <path
+                        d="M12 0C10.90625 0 10 0.90625 10 2L10 4L4 4C2.839844 4 2 4.839844 2 6L2 13L48 13L48 6C48 4.839844 47.160156 4 46 4L40 4L40 2C40 0.90625 39.09375 0 38 0L36 0C34.90625 0 34 0.90625 34 2L34 4L16 4L16 2C16 0.90625 15.09375 0 14 0Z M12 2L14 2L14 8L12 8Z M36 2L38 2L38 8L36 8Z M2 15L2 46C2 47.160156 2.839844 48 4 48L46 48C47.160156 48 48 47.160156 48 46L48 15Z M12 21L17 21L17 26L12 26Z M19 21L24 21L24 26L19 26Z M26 21L31 21L31 26L26 26Z M33 21L38 21L38 26L33 26Z M12 28L17 28L17 33L12 33Z M19 28L24 28L24 33L19 33Z M26 28L31 28L31 33L26 33Z M33 28L38 28L38 33L33 33Z M12 35L17 35L17 40L12 40Z M19 35L24 35L24 40L19 40Z M26 35L31 35L31 40L26 40Z M33 35L38 35L38 40L33 40Z">
+                    </path>
+                </svg>
+            </div>
+
+            <div data-action="nav/setting">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="2.173828125 2 19.65234375 20">
+                    <path
+                        d="M9.6679688 2L9.1757812 4.5234375C8.3550224 4.8338012 7.5961042 5.2674041 6.9296875 5.8144531L4.5058594 4.9785156L2.1738281 9.0214844L4.1132812 10.707031C4.0445153 11.128986 4 11.558619 4 12C4 12.441381 4.0445153 12.871014 4.1132812 13.292969L2.1738281 14.978516L4.5058594 19.021484L6.9296875 18.185547C7.5961042 18.732596 8.3550224 19.166199 9.1757812 19.476562L9.6679688 22L14.332031 22L14.824219 19.476562C15.644978 19.166199 16.403896 18.732596 17.070312 18.185547L19.494141 19.021484L21.826172 14.978516L19.886719 13.292969C19.955485 12.871014 20 12.441381 20 12C20 11.558619 19.955485 11.128986 19.886719 10.707031L21.826172 9.0214844L19.494141 4.9785156L17.070312 5.8144531C16.403896 5.2674041 15.644978 4.8338012 14.824219 4.5234375L14.332031 2L9.6679688 2 z M12 8C14.209 8 16 9.791 16 12C16 14.209 14.209 16 12 16C9.791 16 8 14.209 8 12C8 9.791 9.791 8 12 8 z">
+                    </path>
+                </svg>
+            </div>
+        </nav>
+        <content-menu class="menu-frame">
+            <div class="side-bar-container"></div>
+        </content-menu>
+
+
+        <content-menu class="setting-frame">
+            <iframe src="/app/setting/index.html">
+
+            </iframe>
+        </content-menu>
+    </side-menu>
+
+    <content-view>
+
+        <main>
+            <iframe id="main-frame" src="" frameborder="0" name="frame"></iframe>
+            <label class="command-bar"  >
+                >
+                <input id="txt-command" />
+            </label>
+        </main>
+
+
+        <side-panel style="display: none;">
+            <tool-bar>
+                <span>Properties</span>
+                <button onclick="this.parentElement.parentElement.style.display='none'">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                        <path
+                            d="M21.125 0L4.875 0C2.183594 0 0 2.183594 0 4.875L0 21.125C0 23.816406 2.183594 26 4.875 26L21.125 26C23.816406 26 26 23.816406 26 21.125L26 4.875C26 2.183594 23.816406 0 21.125 0Z M18.78125 17.394531L17.390625 18.78125C17.136719 19.035156 16.722656 19.035156 16.46875 18.78125L13 15.3125L9.53125 18.78125C9.277344 19.035156 8.863281 19.035156 8.609375 18.777344L7.21875 17.394531C6.96875 17.136719 6.96875 16.726563 7.21875 16.46875L10.6875 13L7.222656 9.535156C6.96875 9.277344 6.96875 8.863281 7.222656 8.609375L8.609375 7.222656C8.863281 6.964844 9.28125 6.964844 9.535156 7.222656L13 10.6875L16.46875 7.222656C16.722656 6.964844 17.140625 6.964844 17.390625 7.222656L18.78125 8.605469C19.035156 8.863281 19.035156 9.277344 18.78125 9.535156L15.3125 13L18.78125 16.46875C19.03125 16.726563 19.03125 17.136719 18.78125 17.394531Z">
+                        </path>
+                    </svg>
+                </button>
+
+            </tool-bar>
+            <iframe id="properties-frame" src="/editor-request/index.html"></iframe>
+        </side-panel>
+
+
+    </content-view>
+
+
+    <pre id="output"></pre>
+    <script type="text/javascript">
+        var element = new Image;
+        var devtoolsOpen = false;
+        element.__defineGetter__("id", function () {
+            devtoolsOpen = true; // This only executes when devtools is open.
+        });
+        setInterval(function () {
+            devtoolsOpen = false;
+
+            if (devtoolsOpen == true) {
+                document.title = "open"
+            } // else here if you like to see if dev tools are not open
+        }, 1000);
+    </script>
+
+
+
+</body>
+
+</html>

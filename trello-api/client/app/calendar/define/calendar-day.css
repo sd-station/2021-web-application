@@ -1,0 +1,45 @@
+.date-today {
+  border: 1px solid deepskyblue;
+}
+.tag-container {
+  display: flex;
+  overflow: hidden;
+  padding: 2px;
+}
+.time-tag-item {
+  align-items: center;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  font-size: small;
+  color: black;
+  padding: 0 5px 0 0;
+  min-width: 20px;
+  min-height: 20px;
+  display: flex;
+  gap: 5px;
+  background-color: #cfcfcf;
+}
+.time-tag-item span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.time-tag-item span.text:first-child {
+  margin-left: 5px;
+}
+@media only screen and (max-width: 400px) {
+  .time-tag-item span.text {
+    display: none;
+  }
+}
+.time-tag-item.theme-red {
+  background-color: red;
+}
+.time-tag-item svg {
+  width: 16px;
+  height: 16px;
+}
+.time-tag-item svg path {
+  fill: currentColor;
+}

@@ -1,0 +1,124 @@
+//main: ../#basic-index.less
+
+
+
+.tool-bar {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button,
+.btn {
+    background-color: var(--button-bg);
+    color: #efefef;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    user-select: none;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    &:hover {
+
+        transition: 500ms;
+        background-color: var(--button-bg-lighten);
+        cursor: pointer;
+    }
+
+}
+
+.btn.link,
+.btn-link {
+    background-color: transparent;
+    color: var(--button-bg);
+    font-family: Samim;
+    font-size: 1rem;
+    margin-left: 10px;
+
+    &:hover {
+        transition: 500ms;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.btn-action,
+.btn.action {
+    background-color: var(--button-bg-action);
+    color: var(--button-cl-action);
+    letter-spacing: 2px;
+
+}
+
+.btn-create,
+.btn.create {
+    background-color: var(--btn-create-bg);
+    color: var(--btn-create-fg);
+    border-color: var(--btn-create-border-color);
+}
+
+.btn-warning,
+.btn.warning {
+
+    background-color: var(--btn-warning-bg);
+    color: var(--btn-warning-fg);
+    border-color: var(--btn-warning-border-color);
+}
+
+.btn.inactive {
+    background-color: #000;
+    cursor: default;
+}
+
+.btn-danger,
+.btn.danger {
+    background-color: var(--button-bg-danger);
+    letter-spacing: 2px;
+    color: var(--button-cl-danger);
+}
+
+.actions {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    ;
+}
+
+.action-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    gap: 5px;
+    ;
+}
+
+.not-working{
+    background-color: #000 !important;
+}
+
+@media (hover: none) {
+    .btn {
+        padding: 15px !important;
+    }
+
+    .link:not(.btn) {
+        text-decoration: underline;
+    }
+}
+
+.btn.icon{
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    margin-left: 5px;
+}

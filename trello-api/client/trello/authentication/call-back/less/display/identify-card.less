@@ -1,0 +1,155 @@
+//main: ../#other-pages.trello-verification-index.less
+
+
+identify-card {
+    .card-area {
+
+
+        display: flex;
+        margin: 0 auto;
+
+        border: 1px solid #000;
+        border-radius: 40px;
+        background-image: linear-gradient(#006f75, #006f75);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        background-color: #9e2d00;
+        max-width: 540px;
+
+        padding: 15px;
+        justify-content: stretch;
+
+        @media only screen and (max-width: 400px) {
+            padding: 5px;
+
+
+        }
+
+    }
+
+    .card-item {
+        background-color: #fff;
+        margin: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+        border-radius: 25px;
+        border: 1px solid #000;
+        flex-grow: 1;
+        padding-top: 20px;
+
+        @media only screen and (max-width: 400px) {
+            padding: 5px;
+            justify-content: center;
+        }
+
+        section.profile {
+            padding: 10px;
+
+            @media only screen and (max-width: 400px) {
+                padding: 5px;
+            }
+
+            img {
+                border-radius: 100%;
+                width: 118px;
+                height: 118px;
+                object-fit: cover;
+                border: 2px solid black;
+
+                @media only screen and (max-width: 400px) {
+
+                    width: 63px;
+                    height: 63px;
+
+                }
+            }
+        }
+
+        section.info {
+            color: #000;
+            flex-grow: 1;
+            padding: 20px 10px;
+
+            @media only screen and (max-width: 400px) {
+                padding: 5px;
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: 24px;
+
+                @media only screen and (max-width: 400px) {
+                    font-size: 16px;
+                    text-align: center;
+                }
+
+                margin: 0;
+                border-bottom: 1px solid #000000;
+
+            }
+
+            a {
+                font-size: 20px;
+
+                @media only screen and (max-width: 400px) {
+                    text-align: center;
+                    display: block;
+                    font-size: 14px;
+                }
+
+                text-decoration: none;
+                color: black;
+            }
+
+            .profile-info {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+
+                @media only screen and (max-width: 400px) {
+                    justify-content: center;
+                }
+            }
+
+            .link-qr-code img {
+                width: 42px;
+                height: 42px;
+            }
+
+
+            .expire-date {
+                color: #707070;
+                padding: 0 15px;
+
+                @media only screen and (max-width: 400px) {
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+
+    .card-commands {
+        padding: 15px 30px;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            font-size: 14px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            text-transform: capitalize;
+            padding: 0 10px;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+//end Identify Card

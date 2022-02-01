@@ -1,0 +1,5 @@
+/document-generator/container/E:/trello-api/client/trello/emoji/list/index.html
+request: container
+filepath : E:\trello-api\client\trello\emoji\list\index.html
+result: File Copy Success.
+result: File Copy Success.

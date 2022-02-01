@@ -1,0 +1,18 @@
+import { {{name}}Editor } from "./{{name-lower}}-editor.js";
+
+const form = new {{name}}Editor();
+
+//>> Assign Data
+{{assign}}
+
+//>> Handle Submit
+form.btnSubmit.addEventListener("click", async _ => {
+    //> Loading
+    document.body.classList.add("loading")
+
+    //> Submit Data
+
+
+    //> Reload
+    window.location.replace("/")
+})

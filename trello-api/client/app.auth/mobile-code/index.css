@@ -1,0 +1,46 @@
+input.short-input {
+  text-align: center;
+  line-height: 80px;
+  font-size: 50px;
+  border: solid 1px #ccc;
+  box-shadow: 0 0 5px #ccc inset;
+  outline: none;
+  max-width: 50px !important;
+  transition: all 0.2s ease-in-out;
+  border-radius: 3px;
+}
+input.short-input:focus {
+  border-color: purple;
+  box-shadow: 0 0 5px purple inset;
+}
+input.short-input::selection {
+  background: transparent;
+}
+button {
+  margin: 30px 0 50px;
+  width: 100%;
+  padding: 6px;
+  background-color: #B85FC6;
+  border: none;
+  text-transform: uppercase;
+}
+button.close {
+  border: solid 2px;
+  border-radius: 30px;
+  line-height: 19px;
+  font-size: 120%;
+  width: 22px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.code-cover {
+  align-self: stretch;
+  width: 100%;
+}
+.code-cover div {
+  justify-content: center;
+}
+input:invalid {
+  color: red;
+}

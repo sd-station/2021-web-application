@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/basic.css">
+    <script async="" defer="" type="module" src="./index.html.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input-form>
+
+        <label>
+            <input type="checkbox" name="" id="setting-use-offline-data">
+            <span>use offline data</span>
+        </label>
+
+        <label>
+            <input type="checkbox" name="" id="setting-remember-last-page">
+            <span>Remember last Visit Page</span>
+        </label>
+
+        <button class="full-screen">fullscreen</button>
+
+    </input-form>
+
+    <script>
+        // element which needs to enter full-screen mode
+        var elem = window.parent.document.documentElement;
+        /* View in fullscreen */
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        }
+
+        /* Close fullscreen */
+        function closeFullscreen() {
+            if (window.parent.document.exitFullscreen) {
+                window.parent.document.exitFullscreen();
+            } else if (window.parent.document.webkitExitFullscreen) { /* Safari */
+                window.parent.document.webkitExitFullscreen();
+            } else if (window.parent.document.msExitFullscreen) { /* IE11 */
+                window.parent.document.msExitFullscreen();
+            }
+        }
+
+        var ke = document.querySelector(".full-screen")
+        ke.addEventListener("click", _ => {
+            if (!window.parent.document.fullscreenElement) {
+                openFullscreen()
+            } else {
+                closeFullscreen()
+            }
+        })
+    </script>
+
+  
+</body>
+
+</html>

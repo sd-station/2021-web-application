@@ -1,0 +1,45 @@
+//out: ./
+
+h3 {
+    text-align: center;
+}
+
+calendar-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+
+    @media only screen and (max-width: 400px) {
+        margin-left: 2px;
+        margin-right: 2px;
+        
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body{
+        margin: 0;
+    }
+}
+
+
+
+.calendar-base() {
+    margin: 1px;
+    height: 80px;
+    padding-top: 2px
+}
+
+
+calendar-hidden {
+    .calendar-base;
+
+}
+
+calendar-day {
+    .calendar-base;
+    color: #efefef;
+    background-color: #363636;
+    text-align: center;
+}

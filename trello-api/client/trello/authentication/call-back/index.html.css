@@ -1,0 +1,190 @@
+body {
+  background-color: #212121;
+  color: #efefef;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.fx {
+  display: flex;
+}
+h1 {
+  color: #9e2d00;
+  border-bottom: 1px solid #531a03;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.loading-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-center img {
+  filter: grayscale(100%);
+  height: 64px;
+  width: 64px;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  width: 60px;
+  height: 60px;
+}
+header h2 {
+  color: #2c7dbe;
+  font-weight: 400;
+  font-size: 24px;
+  border-bottom: 2px solid #2c7dbe;
+  padding: 0 64px 0 15px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 400px) {
+  header h2 {
+    font-size: 16px;
+  }
+}
+article {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article header {
+  margin: 0 auto;
+}
+identify-card .card-area {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #000;
+  border-radius: 40px;
+  background-image: linear-gradient(#006f75, #006f75);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-color: #9e2d00;
+  max-width: 540px;
+  padding: 15px;
+  justify-content: stretch;
+}
+@media only screen and (max-width: 400px) {
+  identify-card .card-area {
+    padding: 5px;
+  }
+}
+identify-card .card-item {
+  background-color: #fff;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  flex-grow: 1;
+  padding-top: 20px;
+}
+@media only screen and (max-width: 400px) {
+  identify-card .card-item {
+    padding: 5px;
+    justify-content: center;
+  }
+}
+identify-card .card-item section.profile {
+  padding: 10px;
+}
+@media only screen and (max-width: 400px) {
+  identify-card .card-item section.profile {
+    padding: 5px;
+  }
+}
+identify-card .card-item section.profile img {
+  border-radius: 100%;
+  width: 118px;
+  height: 118px;
+  object-fit: cover;
+  border: 2px solid black;
+}
+@media only screen and (max-width: 400px) {
+  identify-card .card-item section.profile img {
+    width: 63px;
+    height: 63px;
+  }
+}
+identify-card .card-item section.info {
+  color: #000;
+  flex-grow: 1;
+  padding: 20px 10px;
+}
+@media only screen and (max-width: 400px) {
+  identify-card .card-item section.info {
+    padding: 5px;
+  }
+}
+identify-card .card-item section.info h3 {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0;
+  border-bottom: 1px solid #000000;
+}
+@media only screen and (max-width: 400px) {
+  identify-card .card-item section.info h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+identify-card .card-item section.info a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+@media only screen and (max-width: 400px) {
+  identify-card .card-item section.info a {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+  }
+}
+identify-card .card-item section.info .profile-info {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 400px) {
+  identify-card .card-item section.info .profile-info {
+    justify-content: center;
+  }
+}
+identify-card .card-item section.info .link-qr-code img {
+  width: 42px;
+  height: 42px;
+}
+identify-card .card-item section.info .expire-date {
+  color: #707070;
+  padding: 0 15px;
+}
+@media only screen and (max-width: 400px) {
+  identify-card .card-item section.info .expire-date {
+    padding: 0 5px;
+  }
+}
+identify-card .card-commands {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+identify-card .card-commands button {
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 0 10px;
+}
+identify-card .card-commands button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

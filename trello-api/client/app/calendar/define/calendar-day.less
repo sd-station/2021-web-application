@@ -1,0 +1,60 @@
+//out: ./
+
+
+
+.date-today {
+    border: 1px solid deepskyblue;
+}
+
+.tag-container {
+    display: flex;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.time-tag-item {
+    align-items: center;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    font-size: small;
+    color: black;
+    padding: 0 5px 0 0;
+    min-width: 20px;
+    min-height: 20px;
+    display: flex;
+    gap: 5px;
+    background-color: #cfcfcf;
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    span.text:first-child {
+        margin-left: 5px;
+    }
+
+
+    @media only screen and (max-width: 400px) {
+        span.text{
+            display: none;
+        } 
+    }
+
+    &.theme-red {
+        background-color: red;
+
+    }
+
+    svg {
+        width: 16px;
+        height: 16px;
+
+        path {
+            fill: currentColor;
+        }
+    }
+
+}

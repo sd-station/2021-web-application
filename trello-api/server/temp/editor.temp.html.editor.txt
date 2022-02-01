@@ -1,0 +1,8 @@
+export class {{name}}Editor {
+    {{declare}}
+    btnSubmit: HTMLButtonElement;
+    constructor() {
+        {{assign}}
+        this.btnSubmit = document.querySelector("#btn-submit-form")!
+    }
+}

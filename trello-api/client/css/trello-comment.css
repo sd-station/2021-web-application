@@ -1,0 +1,264 @@
+.avatar {
+  align-self: flex-end;
+  margin: 2px 10px 0 10px;
+}
+message-line {
+  display: flex;
+  margin-top: 5px;
+}
+message-line.selected {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+msg-item {
+  padding: 2px;
+  border-radius: 7px 7px 7px 0;
+  max-width: 400px;
+  color: #000;
+  background-color: #ffffff;
+  position: relative;
+}
+.dark-mode msg-item {
+  color: #ffffff;
+  background-color: #182533;
+}
+msg-item msg-content {
+  display: block;
+  padding: 2px 5px;
+  white-space: pre-line;
+  min-width: 250px;
+}
+msg-item msg-content img.sending-image {
+  background-size: contain;
+}
+msg-item msg-content.lng-fa {
+  direction: rtl;
+  font-family: shabnam;
+}
+msg-item msg-info {
+  display: flex;
+  font-size: smaller;
+  font-weight: 100;
+  justify-content: flex-end;
+  padding: 2px 5px 0 5px;
+}
+msg-item msg-info time {
+  color: silver;
+}
+.dark-mode msg-item msg-info time {
+  color: silver;
+}
+msg-item.msg-recieved::before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid #ffffff;
+  border-left: 10px solid transparent;
+  content: " ";
+  bottom: 0;
+  margin-left: -10px;
+}
+.dark-mode msg-item.msg-recieved::before {
+  border-left: 5px solid #707070;
+}
+msg-item.msg-send {
+  margin-left: auto;
+  background-color: #def1fd;
+}
+msg-item.msg-send::before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid #def1fd;
+  border-right: 10px solid transparent;
+  content: " ";
+  bottom: 0;
+  right: 0;
+  margin-right: -7px;
+}
+.dark-mode msg-item.msg-send::before {
+  border-right: 5px solid #1e4c91;
+}
+.dark-mode msg-item.msg-send {
+  background-color: #1e4c91;
+}
+msg-item.msg-send msg-info {
+  color: #92b5e9;
+}
+msg-item.msg-send msg-state {
+  margin-left: 5px;
+}
+msg-item.msg-send msg-state.state-normal::after {
+  content: "normal";
+  opacity: 0.7;
+}
+msg-item.msg-send msg-state.state-sending::after {
+  opacity: 0.7;
+  content: "sending...";
+}
+msg-item.msg-send msg-state.state-sended::after {
+  content: "sended";
+}
+msg-item.msg-send msg-state.state-recieved::after {
+  content: "recieved";
+}
+msg-item.msg-send msg-state.state-read::after {
+  content: "read";
+}
+msg-item.msg-send msg-state.state-failed::after {
+  content: "failed";
+  color: #f76868;
+  text-shadow: 1px 1px 1px black;
+}
+img {
+  display: block;
+}
+img {
+  margin: 0 auto;
+  object-fit: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+img[data-src] {
+  cursor: pointer;
+}
+.check-item {
+  margin: 2px;
+  display: flex;
+  align-items: center;
+}
+.check-item::before {
+  width: 20px;
+  height: 20px;
+  content: " ";
+  border: 1px solid #707070;
+  margin: 5px 10px;
+}
+.check-item.complete::before {
+  background-color: rgba(53, 255, 3, 0.432);
+}
+.check-item.incomplete {
+  color: orange;
+}
+.check-item:hover {
+  cursor: pointer;
+}
+.check-item:hover span {
+  cursor: text;
+}
+msg-objects {
+  display: flex;
+}
+msg-objects div.preview-icon {
+  user-select: none;
+  height: 64px;
+  width: 64px;
+  flex-basis: 64px;
+  min-width: 64px;
+  background-color: #40a7e3;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.dark-mode msg-objects div.preview-icon {
+  background-color: rgba(255, 255, 255, 0.137);
+  color: rgba(255, 255, 255, 0.411);
+}
+.file msg-objects div.preview-icon {
+  background-image: url(/assets/icon/file-check.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center center;
+}
+msg-objects div.file-info {
+  padding: 15px 10px;
+  flex-grow: 1;
+  color: #40a7e3;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.dark-mode msg-objects div.file-info {
+  color: lightblue;
+}
+msg-objects svg {
+  width: 24px;
+  height: 24px;
+}
+msg-objects svg path {
+  fill: #6fa3b4;
+}
+msg-objects a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+msg-objects a span.file-name {
+  padding: 5px;
+}
+.unknown {
+  color: red;
+}
+.file-sending .file-info {
+  text-decoration: none;
+  color: black;
+}
+.file-sending div.preview-icon {
+  background-image: url(/assets/icon/upload.svg);
+  background-size: 110%;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.file-sending progress {
+  margin: 10px 0;
+  width: 200px;
+  height: 10px;
+  background-color: #000;
+  display: block;
+}
+.file-sending .btn-cancel {
+  border: none;
+  outline: none;
+  color: red;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.file-sending .btn-cancel:hover {
+  cursor: pointer;
+}
+.file-sending .btn-cancel:active {
+  color: black;
+}
+.state-over::after {
+  opacity: 0;
+  transition: 0.5s;
+}
+.state-changed {
+  position: relative;
+}
+.state-changed::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  top: 0;
+  background: rgba(255, 0, 0, 0.2);
+  animation: progress 1.5s infinite ease-in-out;
+}
+@keyframes progress {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    right: 0;
+    width: 0;
+  }
+}

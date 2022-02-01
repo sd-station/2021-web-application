@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/basic.css">
+
+</head>
+
+<body>
+    <h1>create new workspace</h1>
+
+    <input-form>
+        <label><span>Title: </span>
+            <input required="" id="txt-workspace-name" autocomplete="off" placeholder="Title">
+        </label>
+
+        <label><span>Workspace Id: </span>
+            <input id="txt-workspace-shortname" autocomplete="off" placeholder="id" minlength="3">
+        </label>
+
+        <label><span>Website: </span>
+            <input id="txt-workspace-website" autocomplete="off" placeholder="id" minlength="3">
+        </label>
+
+        <label><span>About: </span>
+            <textarea id="txt-workspace-desc" autocomplete="off" placeholder="id" minlength="3"></textarea>
+        </label>
+
+
+
+        <label class="submit-button">
+            <span> </span>
+            <button id="btn-submit-form">
+                Create New
+            </button>
+        </label>
+    </input-form>
+
+    <h2>Actions</h2>
+    <div class="actions">
+
+        <a  href="../index.html" class="btn action link">goto list of Workspace</a>
+    </div>
+
+</body>
+
+</html>

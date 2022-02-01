@@ -1,0 +1,1 @@
+{"version":3,"file":"window-data-class.js","sourceRoot":"","sources":["window-data-class.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,kBAAkB,EAAE,MAAM,2BAA2B,CAAA;AAE9D,MAAM,OAAO,eAAe;IACxB,SAAS,CAAqB;IAC9B;QACI,IAAI,CAAC,SAAS,GAAG,IAAI,kBAAkB,EAAE,CAAC;IAC9C,CAAC;CACJ"}
